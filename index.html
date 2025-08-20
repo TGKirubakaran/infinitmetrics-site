@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfinitMetrics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: url('assets/images/dashboard.png') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Overlay to improve text readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 32, 39, 0.7); /* Dark overlay */
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-size: 1.1em;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 1.4em;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-style: italic;
+      opacity: 0.8;
+      text-align: right;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 80px);
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      opacity: 0.6;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">InfinitMetrics</div>
+    <div class="tagline">Context Intelligence | Business Insights | Decision Engine</div>
+  </header>
+  <main>
+    <p>Transforming how you see your business.</p>
+  </main>
+  <footer>© 2025 InfinitMetrics</footer>
+</body>
+</html>
