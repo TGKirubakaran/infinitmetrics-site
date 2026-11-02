@@ -1,0 +1,1 @@
+document.querySelectorAll('.demo-prompts button').forEach(button=>button.addEventListener('click',()=>{document.getElementById('demo-question').textContent=button.dataset.question;document.getElementById('demo-answer').textContent=button.dataset.answer;}));
