@@ -1,85 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InfinitMetrics</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: #fff;
-      background: url('assets/images/dashboard.png') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
-    }
-
-    /* Overlay to improve text readability */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(15, 32, 39, 0.7); /* Dark overlay */
-      z-index: -1;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: rgba(0, 0, 0, 0.3);
-      font-size: 1.1em;
-    }
-
-    .brand {
-      font-weight: bold;
-      font-size: 1.4em;
-      letter-spacing: 0.5px;
-    }
-
-    .tagline {
-      font-style: italic;
-      opacity: 0.8;
-      text-align: right;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: calc(100vh - 80px);
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9em;
-      opacity: 0.6;
-      width: 100%;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="brand">InfinitMetrics</div>
-    <div class="tagline">Context Intelligence | Business Insights | Decision Engine</div>
-  </header>
-  <main>
-    <p>See your business from a new perspective.</p>
-  </main>
-  <footer>© 2026 InfinitMetrics</footer>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Agentic AI that connects fragmented business data to context, explains what matters, and helps teams move forward."><title>InfinitMetrics — Agentic AI with business context</title><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/agent-demo.css"></head><body>
+<header class="wrap topbar"><a class="brand" href="index.html"><span>InfinitMetrics<small>INTERACTIVE INTELLIGENCE · MEANINGFUL CONVERSATIONS</small></span></a><button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav"><a class="active" href="index.html">Home</a><a href="pulseiq.html">PulseIQ</a><a class="nav-cta" href="discuss.html">Discuss your challenges <span class="arrow">↗</span></a></nav></header>
+<main>
+<section class="wrap agent-hero"><div class="agent-copy"><div class="eyebrow">Agentic AI for business context</div><h1>AI agents that connect your data to what matters.</h1><p class="lead">InfinitMetrics brings fragmented enterprise information into context, so AI agents can investigate business questions, explain what they find, and help teams see what to do next.</p><div class="actions"><a class="button" href="pulseiq.html">Discover PulseIQ <span class="arrow">→</span></a><a class="button secondary" href="discuss.html">Discuss your challenges</a></div><div class="hero-points"><span>SEE what matters</span><span>ASK in conversation</span><span>KNOW the context</span></div></div>
+<div class="agent-demo" aria-label="Agentic intelligence view with business metrics and connected signals"><div class="demo-top"><div><span class="demo-kicker">PULSEIQ · AGENTIC WORKFLOW</span><strong>Ask your business</strong></div><span class="connected-state"><i></i> CONTEXT CONNECTED</span></div><div class="demo-question-label">BUSINESS QUESTION</div><div class="demo-question" id="demo-question">What changed across our business this month?</div><div class="metric-grid"><article class="metric-card"><div class="metric-label">REVENUE</div><div class="metric-value">$8.42M</div><div class="metric-delta positive">↗ 8.4% <span>vs last month</span></div><svg viewBox="0 0 120 32" role="img" aria-label="Revenue trend rising"><path class="chart-fill green-fill" d="M0 26 L16 22 L30 24 L44 16 L59 19 L74 11 L88 15 L103 6 L120 3 L120 32 L0 32Z"/><path class="chart-line green-line" d="M0 26 L16 22 L30 24 L44 16 L59 19 L74 11 L88 15 L103 6 L120 3"/></svg></article><article class="metric-card"><div class="metric-label">CONVERSION</div><div class="metric-value">32.8%</div><div class="metric-delta negative">↘ 3.2 pts <span>vs last month</span></div><svg viewBox="0 0 120 32" role="img" aria-label="Conversion trend easing down"><path class="chart-fill red-fill" d="M0 5 L15 9 L30 7 L45 14 L60 11 L76 19 L90 17 L105 23 L120 28 L120 32 L0 32Z"/><path class="chart-line red-line" d="M0 5 L15 9 L30 7 L45 14 L60 11 L76 19 L90 17 L105 23 L120 28"/></svg></article><article class="metric-card"><div class="metric-label">OPEN ORDERS</div><div class="metric-value">1,284</div><div class="metric-delta positive">↗ 6.7% <span>vs last month</span></div><svg viewBox="0 0 120 32" role="img" aria-label="Open orders trend rising"><path class="chart-fill blue-fill" d="M0 24 L15 20 L29 22 L44 14 L59 16 L73 10 L88 14 L103 7 L120 4 L120 32 L0 32Z"/><path class="chart-line blue-line" d="M0 24 L15 20 L29 22 L44 14 L59 16 L73 10 L88 14 L103 7 L120 4"/></svg></article></div><div class="agent-progress"><span class="pulse-dot"></span><strong>Agent connected signals across your business</strong><span class="step-count">3 STEPS</span></div><div class="signal-map"><div class="signal-source"><span>FINANCE</span><i></i><b>Revenue ↑</b></div><div class="signal-source"><span>CRM</span><i></i><b>Conversion ↓</b></div><div class="signal-source"><span>OPERATIONS</span><i></i><b>Orders ↑</b></div></div><div class="answer-box"><div class="answer-heading"><span>WHAT THE SIGNALS SUGGEST</span><span>PulseIQ response</span></div><p id="demo-answer">Revenue is up 8.4%, led by enterprise accounts. Conversion is down 3.2 points, while open orders have risen 6.7%—a widening gap between sales momentum and delivery commitments.</p><div class="evidence-row"><span>Revenue trend</span><span>Conversion by segment</span><span>Order movement</span></div></div><div class="demo-prompts"><span>ASK A FOLLOW-UP</span><button type="button" data-question="Why is conversion trending down?" data-answer="The decline is concentrated in new business. The strongest related signals are fewer late-stage opportunities progressing and a drop in recent follow-up activity. Review the affected segments and opportunity history to understand the cause.">Why is conversion trending down?</button><button type="button" data-question="What is driving revenue growth?" data-answer="Enterprise accounts are contributing most to the increase. The trend is strongest in expansion revenue, while new business conversion is softer. This separates the growth driver from the area that may need attention.">What is driving revenue growth?</button></div><div class="demo-note">Illustrative view · sample data · no live connection</div></div></section>
+<section class="band white"><div class="wrap"><div class="section-head"><div class="eyebrow">SEE • ASK • KNOW</div><h2>More than a reply. A clearer path to understanding.</h2><p>Agentic AI can help people move from a question to connected context, then to a useful explanation they can examine.</p></div><div class="three"><article class="tile"><span class="num">01 / SEE</span><h3>See the bigger picture</h3><p>Bring important business signals into view and make relationships easier to explore.</p></article><article class="tile"><span class="num">02 / ASK</span><h3>Ask in your own words</h3><p>Start with the questions your teams already have about the business.</p></article><article class="tile"><span class="num">03 / KNOW</span><h3>Know the context</h3><p>Understand what an answer means and which information supports it.</p></article></div></div></section>
+<section class="band"><div class="wrap split"><div><div class="eyebrow">Meet PulseIQ</div><h2>Contextual intelligence for the decisions that move your business.</h2><p>PulseIQ is the first InfinitMetrics product, bringing conversational exploration and agentic intelligence to business information.</p><a class="button" href="pulseiq.html">Explore PulseIQ <span class="arrow">→</span></a></div><div class="step-list"><div class="step"><strong>1</strong><div><b>See the signals</b><span>Start with a clearer view of what is happening.</span></div></div><div class="step"><strong>2</strong><div><b>Ask a business question</b><span>Explore the information in everyday language.</span></div></div><div class="step"><strong>3</strong><div><b>Understand the context</b><span>Connect findings to the bigger business picture.</span></div></div></div></div></section>
+<section class="band"><div class="wrap"><div class="quote"><p>Have data across your organization, but still missing the context to make it useful?</p><a class="button" href="discuss.html">Discuss your challenges <span class="arrow">→</span></a></div></div></section>
+</main><footer class="footer"><div class="wrap"><div class="footer-main"><div><a class="brand" href="index.html"><span>InfinitMetrics<small>INTERACTIVE INTELLIGENCE · MEANINGFUL CONVERSATIONS</small></span></a><p>Helping organizations see what matters, ask better questions, and understand the context behind their data.</p></div><div class="footer-links"><a href="pulseiq.html">PulseIQ</a><a href="discuss.html">Discuss your challenges</a></div></div><div class="footer-bottom"><span>© 2026 InfinitMetrics</span><span>SEE • ASK • KNOW</span></div></div></footer><script src="assets/site.js"></script><script src="assets/agent-demo.js"></script></body></html>
