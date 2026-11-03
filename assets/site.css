@@ -11,3 +11,7 @@
 /* Local review draft: dark surfaces for the revised launch palette */
 .signal-card{background:rgba(20,42,49,.96);border-color:#29454c;color:var(--ink);box-shadow:0 22px 54px #0005}.signal-card h3{color:var(--ink)}.signal-card p{color:var(--muted)}.mini-flow div{background:#1b3937;color:var(--ink)}.orbit{border-color:#426861}.orbit.two{border-color:#31534e}.node{border-color:#142a31;box-shadow:0 0 0 1px #88b69d}.iq-card,.case-step{background:var(--white);color:var(--ink)}.status{color:#d4e5dd;background:#27423f}.status.live{background:#234b3d;color:#bce98b}.note{background:#1b3937;color:#c4d6ce}.nav{color:#d3dfda}.nav a:hover,.nav a.active{color:var(--lime)}
 @media(max-width:650px){.nav{background:#142a31}}
+
+/* Keep the footer visually connected to the final content section. */
+main > .band:last-child{padding-bottom:32px}
+main + .footer{padding-top:20px}
