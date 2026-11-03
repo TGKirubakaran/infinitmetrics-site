@@ -5,11 +5,11 @@ document.querySelectorAll('[data-visual-switcher]').forEach(switcher=>{
   const interval=Number(switcher.dataset.interval)||5000;
   const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
   let active=Math.max(0,slides.findIndex(slide=>slide.classList.contains('is-active')));
-  let timer=null,transitionTimer=null,hovered=false,focused=false,transitioning=false;
+  let timer=null,transitionTimer=null,focused=false,transitioning=false;
   const stop=()=>{window.clearTimeout(timer);timer=null};
   const schedule=()=>{
     stop();
-    if(reduceMotion.matches||hovered||focused||document.hidden||transitioning)return;
+    if(focused||document.hidden||transitioning)return;
     timer=window.setTimeout(()=>show((active+1)%slides.length),interval);
   };
   const updateControls=index=>controls.forEach((control,i)=>{
@@ -46,8 +46,6 @@ document.querySelectorAll('[data-visual-switcher]').forEach(switcher=>{
   });
   updateControls(active);
   controls.forEach(control=>control.addEventListener('click',()=>show(Number(control.dataset.visualTrigger))));
-  switcher.addEventListener('pointerenter',()=>{hovered=true;stop()});
-  switcher.addEventListener('pointerleave',()=>{hovered=false;schedule()});
   switcher.addEventListener('focusin',()=>{focused=true;stop()});
   switcher.addEventListener('focusout',event=>{
     if(!switcher.contains(event.relatedTarget)){focused=false;schedule()}
